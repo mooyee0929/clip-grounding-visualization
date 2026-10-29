@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=clip_hw6
-#SBATCH --output=hw6_%j.out
-#SBATCH --error=hw6_%j.err
+#SBATCH --job-name=clip_grounding
+#SBATCH --output=clip_grounding_%j.out
+#SBATCH --error=clip_grounding_%j.err
 #SBATCH --time=02:00:00
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
@@ -11,7 +11,7 @@
 
 
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate HW6
+conda activate clip-grounding
 
 
 
